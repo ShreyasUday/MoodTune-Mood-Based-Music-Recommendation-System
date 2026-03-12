@@ -63,13 +63,15 @@ PROJECT/
 │   ├── script.js             # Frontend logic
 │   └── style.css             # Styling
 ├── models/                   # Trained ML models (.pkl)
-├── data/(not included)       # Dataset (download it from drive link)
+├── data/                     # Dataset (not included in repo)
 ├── notebooks/                # Jupyter notebook (model training)
 ├── recommendation.py         # Core recommendation logic
 ├── requirements.txt          # Python dependencies
 ├── package.json              # Node.js dependencies
 └── .env                      # Spotify API credentials (not tracked)
 ```
+
+> 📁 **Dataset**: The `data/` folder is not included in this repo. [Download it from Google Drive](https://drive.google.com/drive/folders/1Kt4jyh1KxrUtFktTSthiDZ-l2rrOHkv3?usp=sharing) and place it in the project root.
 
 ---
 

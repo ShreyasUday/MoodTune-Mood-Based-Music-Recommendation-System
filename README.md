@@ -2,8 +2,6 @@
 
 A mood-based music recommendation system that uses **Machine Learning (K-Means Clustering + KNN)** to suggest songs based on how you're feeling. Songs are enriched with Spotify metadata (album art, preview players, direct links) via the Spotify Web API.
 
-![MoodTune Screenshot](./frontend/screenshot.png)
-
 ---
 
 ## Tech Stack

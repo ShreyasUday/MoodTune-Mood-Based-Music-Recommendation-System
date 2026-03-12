@@ -63,7 +63,7 @@ PROJECT/
 │   ├── script.js             # Frontend logic
 │   └── style.css             # Styling
 ├── models/                   # Trained ML models (.pkl)
-├── data/                     # Dataset (clustered_songs.csv)
+├── data/(not included)       # Dataset (download it from drive link)
 ├── notebooks/                # Jupyter notebook (model training)
 ├── recommendation.py         # Core recommendation logic
 ├── requirements.txt          # Python dependencies
@@ -156,24 +156,6 @@ Open `frontend/index.html` in your browser, or use VS Code Live Server.
 - **Clustering**: K-Means (6 clusters mapped to moods)
 - **Similarity**: K-Nearest Neighbors on PCA-reduced, scaled features
 - **Training notebook**: `notebooks/reccomender.ipynb`
-
----
-
-## API Endpoints
-
-### FastAPI ML Service (`localhost:8000`)
-
-| Method | Endpoint | Body | Response |
-|--------|----------|------|----------|
-| POST | `/songs` | `{ "name": "happy" }` | `[{ "track_name": "...", "artists": "..." }, ...]` |
-
-### Node.js API Gateway (`localhost:3000`)
-
-| Method | Endpoint | Body | Response |
-|--------|----------|------|----------|
-| POST | `/predict/api/recommend` | `{ "name": "happy" }` | Spotify-enriched song array |
-
-**Supported moods**: `happy`, `sad`, `energetic`, `calm`, `angry`, `chill`, `workout`, `party`
 
 ---
 

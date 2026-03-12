@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MoodTune</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="wave"></div>
+
+<header>
+
+<h1>MoodTune 🎧</h1>
+<p>Music that matches your mood</p>
+
+<button class="modeToggle" onclick="toggleMode()">🌙</button>
+
+</header>
+
+
+<section class="mood-section">
+
+<h2>How are you feeling today?</h2>
+
+<div class="mood-buttons">
+
+<button onclick="getSongs('happy')">😊 Happy</button>
+<button onclick="getSongs('sad')">😢 Sad</button>
+<button onclick="getSongs('calm')">😌 Calm</button>
+<button onclick="getSongs('angry')">😡 Angry</button>
+<button onclick="getSongs('energetic')">⚡ Energetic</button>
+
+</div>
+
+</section>
+
+
+<div class="loading" id="loading">
+
+<div class="loader"></div>
+<p>Analyzing mood and computing similarity...</p>
+
+</div>
+
+
+<section class="recommendation">
+
+<h2>Recommended Songs</h2>
+
+<select id="genreFilter" onchange="filterGenre()">
+
+<option value="all">All Genres</option>
+<option value="pop">Pop</option>
+<option value="romantic">Romantic</option>
+<option value="hiphop">HipHop</option>
+
+</select>
+
+<div id="songContainer" class="song-grid"></div>
+
+<button class="refresh" onclick="refreshSongs()">Refresh Recommendations</button>
+
+</section>
+
+
+<section class="history">
+
+<h2>Recently Played</h2>
+
+<div id="historyContainer"></div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

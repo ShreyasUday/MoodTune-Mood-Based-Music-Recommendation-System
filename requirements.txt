@@ -1,0 +1,21 @@
+# Core
+numpy
+pandas
+
+# Machine Learning
+scikit-learn
+joblib
+
+# Web Framework
+Django
+
+# For deployment
+gunicorn
+whitenoise
+
+# Optional (if using Spotify API later)
+requests
+
+# Optional (for visualization in notebook only)
+matplotlib
+seaborn
